@@ -7,9 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/tailwind.css" />
   </head>
-  <body class="bg-gray-100">
-    <div class="grid grid-cols-2">
-      <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl">
+  <body class="bg-gray-300">
+    <div class="bg-gray-100 grid lg:grid-cols-2">
+      <div
+        class="
+          px-8
+          py-12
+          max-w-md
+          mx-auto
+          sm:max-w-xl
+          lg:px-12 lg:py-24 lg:max-w-full
+        "
+      >
         <img class="h-10" src="/img/logo.svg" alt="Workcation" />
         <img
           class="
@@ -23,8 +32,18 @@
           src="./img/beach-work.jpg"
           alt="Woman workcationing on the beach"
         />
-        <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-8 sm:text-4xl">
+        <h1
+          class="
+            mt-6
+            text-2xl
+            font-bold
+            text-gray-900
+            sm:mt-8 sm:text-4xl
+            lg:text-3xl
+          "
+        >
           You can work from anywhere.
+          <br class="hidden lg:inline">
           <span class="text-indigo-500"> Take advantage of it!</span>
         </h1>
         <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
@@ -52,9 +71,9 @@
           >
         </div>
       </div>
-      <div>
+      <div class="hidden relative lg:block">
         <img
-          class="hidden lg:block"
+          class="absolute inset-0 w-full h-full object-cover object-center"
           src="./img/beach-work.jpg"
           alt="Woman workcationing on the beach"
         />
